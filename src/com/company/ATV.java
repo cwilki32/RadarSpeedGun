@@ -11,12 +11,10 @@ public class ATV extends Vehicle implements Mover{
         this.noOfWheels = noOfWheels;
         this.maxSpeed = maxSpeed;
     }
-
-
     @Override
-    public void move() {
+    public double move() {
         System.out.println(getBrand() + getVehicleType() + " is now moving " + maxSpeed + " mph.");
-
+        return maxSpeed;
     }
 
     @Override
@@ -27,9 +25,6 @@ public class ATV extends Vehicle implements Mover{
     @Override
     public void turnOff() {
         super.turnOff();
-    }
-    public int getMaxSpeed() {
-        return maxSpeed;
     }
 
     public String getBrand() {

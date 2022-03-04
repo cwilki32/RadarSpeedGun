@@ -26,11 +26,9 @@ public class Cheetah extends Animal implements Mover{
     }
 
     @Override
-    public void move() {
+    public double move() {
         System.out.println(getName() + getAnimalType() + " is now moving " + maxSpeed + " mph.");
-
-    }
-    public int getMaxSpeed() {
         return maxSpeed;
+
     }
 }
